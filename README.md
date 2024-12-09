@@ -27,3 +27,12 @@ go test -count=1 -v ./tests
 ```
 
 ## Инструкция по сборке и запуску проекта через докер
+Создание образа
+```sh
+docker build -t scheduler .
+```
+
+Запуск контейнера
+```sh
+docker run -p 7540:7540 -d scheduler
+```
